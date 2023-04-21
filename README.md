@@ -77,5 +77,31 @@ guest    guest
 
 
 
+## 实战报告分析
+
+首先我们的目标是一个类似`https://subs.nokia.com`的网站
+
+![image](https://user-images.githubusercontent.com/98140109/233623291-19895314-be4e-4ac9-9d50-3172e76e0923.png)
+
+首先，我检查网站是否包含隐藏目录，所以我尝试 `https://subdomain.nokia.com/.htaccess` ，它返回了 403 错误而不是 404 ，这意味着 .htaccess 文件存在于该子域中。
+
+https://subs.nokia.com/.htaccess 
+
+![image](https://user-images.githubusercontent.com/98140109/233623508-6263cf67-b78c-4d0d-8b80-78c14be32bcc.png)
+
+### 绕过
+
+接下来怎么绕过，包括上面讲解的方法和工具都可以尝试
+尝试更改请求方法绕过
+如GET → POST、GET → TRACE等。
+Burp-Suite抓包并拦截，尝试post绕过失败，trace绕过直接成功
+
+![image](https://user-images.githubusercontent.com/98140109/233624029-a1f2c3f9-9489-4438-bc53-d706b6aee139.png)
+
+成功绕过，.htaccess 文件弹出并给我下载权限。
+
+![image](https://user-images.githubusercontent.com/98140109/233624130-c13295f4-bcae-49bd-8c8f-b985152191dd.png)
+
+这就是全部
 
 
