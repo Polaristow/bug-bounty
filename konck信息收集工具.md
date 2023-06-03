@@ -71,3 +71,5 @@ optional arguments:
                         silent or quiet mode, default: False
                         
 ```
+## 4.效果展示
+![image](https://github.com/Polaristow/bug-bounty/assets/98140109/38bfa025-1d9f-4fc2-bf42-5f4b86e0f513)
