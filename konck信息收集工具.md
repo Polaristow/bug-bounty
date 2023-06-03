@@ -21,7 +21,7 @@ knockpy <DOMAIN>
 ## 3.使用教程
 最常用的使用方法
 `knockpy <DOMAIN>`
-例如 knockpy baidu.com
+例如 `knockpy baidu.com`
 具体可以参考工具介绍
 ```
 usage: knockpy [-h] [-v] [--no-local] [--no-remote] [--no-scan] [--no-http] 
